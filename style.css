@@ -535,9 +535,7 @@ a{
     padding: 0 0 70px 0;
   }
 } @media screen and (max-width: 478px) {
-  .footer{
-    border: 1px solid red;
-  } .other-information{
+  .other-information{
     font-size: 11.5px;
   }
 } @media (min-width:600px) and (max-width:900px) {
