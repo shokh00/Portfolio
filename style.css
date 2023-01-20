@@ -2,9 +2,16 @@
  ::-webkit-scrollbar-thumb{
   width: 100%;
   height: 30px;
-  border: 1px solid black;
  } ::-webkit-scrollbar{
   border: 0;
+ } .user-select{
+  user-select: none;
+ } .counterInTheModal{
+  height: auto;
+  display: flex;
+  height: 100%;
+ } .table{
+  height: 70px;
  }
 * {
   padding: 0;
@@ -362,6 +369,47 @@ a{
 } .smile h1{
   font-size: 50px;
 }
+
+/* Hover Effect */
+.buttons button:first-child:hover{
+  background-color: white;
+  color: #DC780B;
+} .buttons button:last-child:hover{
+  background-color: #DC780B;
+  color: white;
+} .card-full:hover img{
+  scale: 1.2 ;
+} .Bascet:hover{
+  color: #DC780B;
+  background-color: white;
+} .famous-btn:hover {
+  border: 1px solid #DC780B;
+  background-color: white;
+  color: white;
+}
+.shake:hover {
+  animation: shake 0.82s ease both infinite;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+/* Animation */
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
 /* Responsive */
 
 @media screen and (max-width: 600px) {
@@ -621,43 +669,5 @@ a{
     font-size: 33px;
   } .smile span {
     font-size: 60px;
-  }
-}
-
-/* Hover Effect */
-.buttons button:first-child:hover{
-  background-color: white;
-  color: #DC780B;
-} .buttons button:last-child:hover{
-  background-color: #DC780B;
-  color: white;
-} .card-full:hover img{
-  scale: 1.2 ;
-} .Bascet:hover{
-  color: #DC780B;
-  background-color: white;
-} .famous-btn:hover {
-  border: 1px solid #DC780B;
-  background-color: white;
-  color: white;
-}
-.shake:hover {
-  animation: shake 0.82s ease both;
-  transform: translate3d(0, 0, 0);
-  perspective: 1000px;
-}
-
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
   }
 }

@@ -66,7 +66,9 @@ function renderModal() {
             <td class='nameInTheModal'>${item.name}</td>
              <td class='counterInTheModal'>
              <i class="bi bi-dash-circle-dotted" onclick='prev(${item.id})'></i>
+             <div class='user-select'>
              ${item.count}
+             </div>
              <i class="bi bi-plus-circle-dotted" onclick='addCount(${item.id})'></i>
              </td>
             <td class='priceInTheModal'>$${item.price * item.count}</td>
@@ -109,9 +111,12 @@ function prev(id) {
     let index = card.findIndex(e => e.id === id)
     card[index].count -= 1;
     if (card[index].count == 0) {
-        card[index].count = 1;
+        let index = card.findIndex(e => e.id === id)
+        card.splice(index, 1)
     }
     renderModal()
+    RenderHome()
+    Total()
 }
 RenderHome();
 submitClose()
