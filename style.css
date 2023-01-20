@@ -1,0 +1,663 @@
+/* Front */
+ ::-webkit-scrollbar-thumb{
+  width: 100%;
+  height: 30px;
+  border: 1px solid black;
+ } ::-webkit-scrollbar{
+  border: 0;
+ }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} body{
+  scroll-behavior: smooth;
+} li{
+  list-style: none;
+}
+.container-full {
+  width: 100%;
+  overflow: hidden;
+}
+a{
+  text-decoration: none;
+}
+.navbar-full {
+  width: 100%;
+  height: 70px;
+  padding: 0 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  opacity: .9;
+  z-index: 2;
+  top: 0;
+} .navbar-full .about a:after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #2192ff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar-full .about a:hover::after{
+  width:100%;
+} .logo-about{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}.logo{
+  align-items: center;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+} .about a {
+  margin-left: 20px; 
+  display: inline-block;
+  position: relative;
+} .navbar-mobile{
+  font-size: 30px;
+  display: none;
+} .Bascet{
+  width: 95px;
+  height: 55px;
+  border-radius: 6px;
+  background-color: #DC780B;
+  border: 1px solid #DC780B;
+  color: white;
+  transition: .6s;
+} .Bascet span{
+  font-size: 18px;
+  font-weight: 700;
+} .box{
+  width: 100%;
+  height: 65vh;
+  display: flex;
+} .block{
+  width: 50%;
+  height: 100%;
+} .block:first-child{
+  padding: 125px 0 0 150px;
+} .block h2{
+  width: 70%;
+} .block p{
+  margin-top: 25px;
+  width: 90%;
+}.block:last-child{
+  background: url(./Imgs/eat-4.png);
+  background-size: 83%;
+  background-repeat: no-repeat;
+  background-position: 30px 10px;
+} .buttons{
+  margin-top: 25px;
+} .famous-btn{
+  width: 115px;
+  height: 40px;
+  color: white;
+  border-radius: 4px;
+  background-color: #DC780B;
+  border: 1px solid #DC780B;
+  transition: .6s;
+} .buttons button:last-child{
+  width: 115px;
+  height: 40px;
+  color: #DC780B;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid #DC780B;
+  margin-left: 20px;
+  transition: .6s;
+} .gaps{
+  text-align: center;
+  color: #DC780B;
+  letter-spacing: 3px;
+  font-size: 15px;
+  margin-top: 25px;
+ } .cards-full{
+  width: 100%;
+  display: flex;
+  padding: 0 150px;
+  gap: 30px;
+  margin: 30px 0 0 0;
+ } .card-full{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ } .card-full img{
+  margin: 10px 0 10px 0;
+  width: 45px;
+  transition: .6s;
+ }
+  .woman{    
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  margin-top: 50px;
+} .big-block{
+  height: 100%;
+} .big-block:first-child{
+  width: 55%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 140px;
+} .big-block:first-child img:hover{
+  border: 2px dotted gray;
+}.big-block img{
+  border-radius: 5%;
+  transition: .6s;
+} .big-block img:hover{
+  scale: 1.03;
+} .big-block:last-child{
+  padding: 0 0 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} .big-block:last-child h4{
+  width: 70%;
+  letter-spacing: 1px;
+} .big-block:last-child h6{
+  letter-spacing: 5px;
+  color: #DC780B;
+  padding: 0 0 15px 0;
+} .big-block:last-child p{
+  width: 80%;
+  margin-top: 13px;
+} .p-in-the-center{
+  text-align: center;
+  padding: 15px 22%;
+} .food-cards{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 150px;
+  gap: 20px;
+} .food-card{
+  width: 31.8%;
+  box-shadow: 0 0 6px gray; 
+  border-radius: 50px 3px 3px 3px;
+} .food-card img{
+  border-radius: 36px 0 36px 0;
+  width: 100%;
+}.name-price{
+  justify-content: space-between;
+  display: flex;
+} .food-card p{
+  text-align: start;
+  font-size: 13px;
+} .item{
+  padding: 5px 10px;
+} .btn-rate{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} .isRate{
+  font-size: 20px;
+} .takes{
+  width: 100%;
+  height: 400px;
+  background-color: #FDF9F5;
+  display: flex;
+  margin-top: 55px;
+} .take h6{
+  color: #DC780B;
+} .take h3{
+  width: 80%;
+  margin: 0 0 25px;
+} .take p{
+  width: 77%;
+  padding: 0 0 18px 0;
+}.take:first-child{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 100px;
+} .take:last-child{
+  width: 40%;
+  height: 100%;
+} .download-app button:last-child{
+  margin-left: 15px;
+} .take img{
+  width: 45%;
+  height: 125%;
+  margin-top: -50px;
+} .p-center{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 23%;
+} .the{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} .inside{
+  width: 3.5%;
+  margin-left: -2.1%;
+} .borderIs{
+  width: 10%;
+  background-color: black;
+  opacity: .1;
+} .center{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 33%;
+  margin-top: 15px;
+  margin-left: -17%;
+} .mini-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 30px 0;
+} .contact{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FBF1E7;
+  padding: 50px 150px 0 150px;
+} .contact h6{
+  letter-spacing: 3px;
+  padding: 0 0 30px 0;
+  color: #DC780B;
+} .contact h4{
+  text-align: center;
+  padding: 0 120px;
+} .mix {
+  width: 100%;
+  height: 50px;
+  margin: 20px 0 55px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} .mix input{
+  width: 60%;
+  height: 100%;
+  border-radius: 6px 0 0 6px;
+  padding: 0 0 0 10px;
+  border: 0;
+} .mix button{
+  color: white;
+  width: 10%;
+  height: 100%;
+  border: 0;
+  background-color: #DC780B;
+  border-radius: 0 6px 6px 0;
+} .footer{
+  width: 100%;
+  padding: 50px 150px 0 150px;
+  background-color: #252525;
+  display: flex;
+} .main{
+  width: 30%;
+} .one{
+  display: flex;
+} .main ul{
+  padding: 0;
+  color: gray;
+  line-height: 35px;
+  margin-bottom: 100px;
+} .other-information{
+  margin-left: 8rem;
+} .other-information p{
+  margin: 0;
+  color: white;
+} .other-information ul{
+  padding: 0;
+  color: gray;
+  line-height: 35px;
+} .modal-full{
+  width: 75%;
+  height: 70vh;
+  position: fixed;
+  top: -73%;
+  left: 12.5%;
+  border: 1px solid gray;
+  z-index: 3;
+  transition: .6s;
+  backdrop-filter: blur(30px);
+} .modal-body{
+  height: 80%;
+  overflow-y: scroll;
+} .ImgInTheModal{
+  height: 50px;
+} .modal-footer{
+  width: 30%;
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} .modal-footer-buttons {
+  height: 100%;
+  margin-top: 15px;
+} .modal-footer-buttons button:last-child{
+  margin-left: 15px;
+} .smile{
+  width: 100%;
+  height: 150px;
+  backdrop-filter: blur(30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  font-family: sans-serif;
+  gap: 20px;
+  display: none;
+} .smile span{
+  font-size: 70px
+} .smile h1{
+  font-size: 50px;
+}
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+  .navbar-full{
+    padding: 0 15px;
+  } .navbar-full a{
+    display: none;
+  }  .navbar-mobile{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    opacity: .8;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    justify-content:space-around;
+    align-items: center;
+    z-index: 2;
+  } .block:first-child{
+    padding: 0;
+    text-align: center;
+  } .block{
+    width: 100% !important;
+  } .box{
+    flex-direction: column;
+    height: 80vh;
+    margin-top: 70px;
+  } .block h2{
+    width: 100%;
+    margin-top: 10px;
+  } .block p{
+    width: 100%;
+    padding: 0 40px;
+  } .block:last-child{
+    background-position: 50% 50%;
+    background-size: 70%;
+  } .cards-full{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  } .woman{
+    height: auto;
+    flex-direction: column;
+  } .big-block:first-child{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 30px 0;
+  } .big-block img{
+    width: 60%;
+    height: 60%;
+  } .big-block:last-child{
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  } .big-block:last-child h4{
+    width: 100%;
+  } .big-block:last-child p{
+    width: 100%;
+  }
+  .food-cards{
+    padding: 0 ;
+    justify-content: center;
+    align-items: center;
+  } .isRate{
+    font-size: 15px;
+  } .food-card{
+    width: 90%;
+  } .take:first-child{
+    width: 95%;
+    padding: 0 0 0 30px;
+  } .take p {
+    width: 90%;
+  } .take img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 10px 0 0 ;
+  } .center{
+    width: 40%;
+  } .contact{
+    padding: 0 35px;
+  } .contact h4{
+    padding: 0;
+  } .mix button{
+    width: 30%;
+  } .mix input{
+    width: 90%;
+  } .footer{
+    padding: 30px 0 0 20px;
+    flex-wrap: wrap;
+  } .main{
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  } .main img{
+    width: 50px;
+    height: 50px;
+  } .one{
+    width: 100%;
+    display: flex;
+    justify-content: center ;
+    align-items: center ;
+  } .other-information{
+    text-align: center;
+    margin: 0 50px 0 0;
+  } .modal-footer{
+    width: 100%;
+    overflow-x: scroll;
+  } .modal-full{
+    transform: translate(-11% , -5%);
+    width: 95%;
+  } .smile h1{
+    font-size: 23px;
+  } .smile span {
+    font-size: 50px;
+  }
+} @media (min-width:600px) and (max-width:900px) {
+  .navbar-full{
+    padding: 0;
+    padding: 0 10px;
+  } .navbar-full .about a {
+    margin: 0 0 0 15px;
+  } .block:first-child{
+    padding: 25px 0 0 50px;
+  } .box{
+    margin-top: 50px;
+  } .block h2{
+    width: 100%;
+  } .buttons button:first-child{
+    width: 45%;
+  } .buttons button:last-child{
+    width: 45%;
+    margin: 0;
+  } .block:last-child {
+    background-size: 120%;
+    background-position: 30% 30%;
+  } .block:first-child p , h2{
+    width: 100%;
+  } .cards-full{
+    padding: 0 1px;
+  } .woman{
+    flex-direction: column;
+  }.big-block:first-child{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    padding: 0;
+  } .big-block:first-child img{
+    height: 90%;
+  } .big-block:last-child{
+    text-align: center;
+    align-items: center;
+    padding: 0;
+  } .big-block:last-child h6{
+    margin: auto;
+  } .food-cards{
+    padding: 0;
+  }.food-card{
+    width: 48%;
+  } .take:first-child{
+    padding: 0 0 0 30px;
+  } .take:last-child img{
+    width: 90%;
+    height: 110%;
+    margin: -20px 30px 0 0;
+  } .take:last-child{
+    border: 1px solid #FBF1E7;
+  } .contact h4{
+    padding: 0;
+  } .mix button{
+    width: 25%;
+  } .mix input{
+    width: 75%;
+  } .footer{
+    padding: 20px 0 0 0;
+    flex-direction: column;
+  } .main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  } .other-information{
+    margin: 0;
+    text-align: center;
+  } .one{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }.modal-footer{
+    overflow: scroll;
+    width: 100%;
+  } .smile h1{
+    font-size: 33px;
+  } .smile span {
+    font-size: 60px;
+  }
+} 
+@media (min-width:750px) and (max-width:900px) {
+  .block:first-child{
+    margin: 50px 0 0 0  ;
+  } .buttons button:first-child , .buttons button:last-child{
+    width: 40%;
+  } .take:last-child img{
+    width: 75%;
+  } .one{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  } .smile h1{
+    font-size: 33px;
+  } .smile span {
+    font-size: 60px;
+  }
+} @media (min-width:900px) and (max-width: 1178px) {
+  .navbar-full{
+    padding: 0 100px;
+  } .block:first-child{
+    margin: 20px 0 0 0;
+    padding: 100px 0 0 100px;
+  } .block:last-child {
+    background-size: 90%;
+    background-position: 10% 80%;
+  } .cards-full{
+    padding: 0 100px;
+  } .big-block:first-child{
+    width: 100%;
+    padding: 0 0 0 50px;
+  } .big-block:first-child img{
+    width: 100%;
+    height: 60%;
+  } .big-block:last-child{
+    padding: 0 0 0 65px;
+  } .food-cards{
+    padding: 0 100px;
+  } .take:last-child img{
+    height: 110%;
+    width: 60%;
+    margin: -20px 0 0 0;
+  } .footer{
+    padding: 50px 100px;
+  } .first-of-all{
+    margin: 0 0 0 80px;
+  } .other-information{
+    margin: 0 0 0 85px;
+  } .food-card{
+    width: 31%;
+  } .smile h1{
+    font-size: 33px;
+  } .smile span {
+    font-size: 60px;
+  }
+}
+
+/* Hover Effect */
+.buttons button:first-child:hover{
+  background-color: white;
+  color: #DC780B;
+} .buttons button:last-child:hover{
+  background-color: #DC780B;
+  color: white;
+} .card-full:hover img{
+  scale: 1.2 ;
+} .Bascet:hover{
+  color: #DC780B;
+  background-color: white;
+} .famous-btn:hover {
+  border: 1px solid #DC780B;
+  background-color: white;
+  color: white;
+}
+.shake:hover {
+  animation: shake 0.82s ease both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
